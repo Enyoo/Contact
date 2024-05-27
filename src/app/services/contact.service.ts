@@ -1,11 +1,14 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private apiService: ApiService) { }
 
+  getContacts(){
+    return this.apiService.getData("contacts");
+  }
 }
