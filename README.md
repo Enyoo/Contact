@@ -1,27 +1,66 @@
-# Teste
+# Contatos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+Este é um projeto Angular simples que faz a gestão de contatos de uma pessoa usando o Angular.
 
-## Development server
+## Visão Geral
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto inclui:
 
-## Code scaffolding
+- Componentes para representar diferentes partes da interface do usuário.
+- Serviços para lidar com lógica de negócios e interação com APIs externas.
+- Rotas para navegação entre diferentes partes do aplicativo.
+- Integração com o Bootstrap para estilos e componentes adicionais.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos
 
-## Build
+- Node.js e npm instalados globalmente.
+- Angular CLI instalado globalmente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como Usar
 
-## Running unit tests
+### 1. Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone este repositório:
 
-## Running end-to-end tests
+```bash
+git clone git@github.com:Enyoo/Contact.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Navegue até o diretório do projeto:
+```bash
+cd Contact
+```
 
-## Further help
+Instale as dependências:
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Execução do Servidor de Desenvolvimento
+Execute o servidor de desenvolvimento:
+```bash
+ng serve ou npm start
+```
+Acesse o aplicativo em seu navegador em http://localhost:4200/.
+
+3. Construção do Projeto
+Para construir o projeto para produção, use o seguinte comando:
+```bash
+ng build --prod
+```
+
+Isso irá criar uma versão otimizada do aplicativo no diretório dist/. Você pode implantar este diretório em qualquer servidor web para lançamento em produção.
+
+Estrutura do Projeto
+O projeto está estruturado da seguinte forma:
+```bash
+/src
+  /app
+    /components       # Componentes reutilizáveis
+    /services         # Serviços para lógica de negócios
+    /models           # Modelos de dados
+    app-routing.module.ts  # Configuração de rotas
+    app.module.ts     # Módulo principal do aplicativo
+    ...
+```
+
