@@ -15,7 +15,7 @@ Este projeto inclui:
 
 - Node.js e npm instalados globalmente.
 - Angular CLI instalado globalmente.
-- Ter o projeto da API previamente configurado e rodando no ambiente local (https://github.com/Enyoo/ContactAPI.git)
+- Ter o projeto da API previamente configurado e rodando no ambiente local na porta 8000 (https://github.com/Enyoo/ContactAPI.git) ou trocar porta no arquivo src\app\services\api.service.ts:10
 
 ## Como Usar
 
