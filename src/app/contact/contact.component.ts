@@ -28,7 +28,6 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute, 
     private router: Router)
   {
-     // Get the route parameter
   }
 
   ngOnInit() {
