@@ -1,6 +1,26 @@
-<div class="row">
+<h2 class="ps-1 pt-3">
+    Dados do Contato
+</h2>
+<div class="row p-2">
     <div class="col-12">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="Nome" class="form-label">Nome</label>
+        <input type="nome" class="form-control" id="name" placeholder="Fulano de Tal"  [(ngModel)]="contact.name" [disabled]="!edit">
     </div>
+    <div class="col-12">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com"  [(ngModel)]="contact.email" [disabled]="!edit">
+    </div>
+    <div class="col-12">
+        <label for="Telefone" class="form-label">Telefone</label>
+        <input type="telefone" class="form-control" id="telefone" placeholder="(XX)99999-9999" [(ngModel)]="contact.phone" [disabled]="!edit">
+    </div>
+    <div class="col-12">
+        <label for="Celular" class="form-label">Celular</label>
+        <input type="celular" class="form-control" id="cell" placeholder="(XX)99999-9999" [(ngModel)]="contact.cell" [disabled]="!edit">
+    </div>
+
+    <div class="col-2 pt-4" *ngIf="edit">
+        <button type="submit" class="btn btn-primary mb-3" (click)="save()">Salvar</button>
+    </div>
+
 </div>

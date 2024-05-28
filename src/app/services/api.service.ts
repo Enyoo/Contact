@@ -15,11 +15,11 @@ export class ApiService {
     return this.http.get<Contact[]>(`${this.apiUrl}/${endpoint}`);
   }
 
-  postData(endpoint: string, data: any): Observable<any> {
+  postData(endpoint: string, data: Contact): Observable<Contact> {
     return this.http.post<Contact>(`${this.apiUrl}/${endpoint}`, data);
   }
 
-  putData(endpoint: string, data: any): Observable<any> {
+  putData(endpoint: string, data: Contact): Observable<Contact> {
     return this.http.put<Contact>(`${this.apiUrl}/${endpoint}`, data);
   }
 

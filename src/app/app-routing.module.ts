@@ -7,8 +7,11 @@ import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
+  { path: 'new', component: ContactComponent },
   { path: 'detail', component: ContactComponent },
-  { path: 'edit', component: ContactComponent },
+  { path: 'detail/:c/:e', component: ContactComponent },
+  { path: 'edit', component: ListComponent },
+  { path: 'edit/:c/:e', component: ContactComponent },
   { path: '**', component: PageNotFoundComponent }, 
 ];
 
